@@ -1,0 +1,28 @@
+ALGORITHM Insertion sort
+VAR
+    arr : ARRAY_OF INTEGER[i];
+    n, elem,j: INTEGER;
+BEGIN
+    write ('insert length of array');
+    read (i);
+
+    FOR n FROM 0 TO i-1  DO
+        read(arr[i])
+    END_FOR
+
+
+    FOR n FROM 1 to i-1  DO
+        elem := arr[i];
+        j := i-1;
+        WHILE (j > 0 and arr[j] > elem ) DO
+            arr[j+1]:= arr[j]
+            j:= j-1
+            arr[j+1]:= elem
+        END_WHILE
+    END_FOR
+
+    FOR n FROM 0 TO i-1  DO
+        write(arr[i])
+    END_FOR
+
+END
